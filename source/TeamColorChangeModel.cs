@@ -33,7 +33,7 @@ public class TeamColorChangePlugin : BasePlugin
                     {
                         if (player.PlayerPawn != null && player.PlayerPawn.Value != null)
                         {
-                            player.PlayerPawn.Value.Render = Color.FromArgb(0, 0, 255);
+                            player.PlayerPawn.Value.Render = Color.FromArgb(255, 0, 0);
                         }
                     }
                 }
