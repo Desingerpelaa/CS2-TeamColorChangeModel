@@ -11,9 +11,9 @@ jobs:
         with:
           dotnet-version: '8.0'
       - name: Build
-        run: dotnet build source/TeamColorChangeModel.csproj
+        run: dotnet build source/TeamColorChangeModel.csproj --output source/build/
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: plugin
-          path: source/bin/Debug/net8.0/
+          path: source/build/
